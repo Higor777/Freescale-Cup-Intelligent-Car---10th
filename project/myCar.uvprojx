@@ -447,16 +447,6 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>cfg</GroupName>
-          <Files>
-            <File>
-              <FileName>cfg.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\cfg\cfg.h</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
           <GroupName>devices</GroupName>
           <Files>
             <File>
@@ -563,26 +553,6 @@
               <FileName>spi.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\drivers\src\spi.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>usmart</GroupName>
-          <Files>
-            <File>
-              <FileName>usmart.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\usmart\usmart.c</FilePath>
-            </File>
-            <File>
-              <FileName>usmart_config.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\usmart\usmart_config.c</FilePath>
-            </File>
-            <File>
-              <FileName>usmart_str.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\usmart\usmart_str.c</FilePath>
             </File>
           </Files>
         </Group>

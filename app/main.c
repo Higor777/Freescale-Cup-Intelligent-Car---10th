@@ -104,26 +104,12 @@ int main()
 	ParameterList_Init();
 	Data_Init();
 	
-//	float gyro_sum=0,acc_sum=0;
-//	float gyro_aver,acc_aver;
 	uint8_t dynamic_threshold;
 	float speed_cnt=0;
 	
 	while(1)
 	{
-		/*========================AngleSensor测试=========================*/
-//		/*计算零偏均值*/
-//		Gyro_AR2=ADC_QuickReadValue(ENC03_AR2);
-//		Acc_Z=ADC_QuickReadValue(MMA7361_ZOUT);
-//		gyro_sum+=Gyro_AR2;
-//		acc_sum+=Acc_Z;
-//		cnt++;
-//		gyro_aver=gyro_sum/cnt;
-//		acc_aver=acc_sum/cnt;
-//		printf("%d->%f %f\r\n",cnt,gyro_aver,acc_aver);
-//		/*计算零偏均值*/
-		/*================================================================*/
-		
+
 		if(Ctrl_mode==1)Remote_Mode();
 		
 		if(TIME0flag_20ms==1)
@@ -188,12 +174,11 @@ int main()
 			
 			
 			extern float Gyro_Omega,Gyro_Integ;
-			
+//调试时可以发送数据到虚拟示波器查看波形			
 //			Out_Data[0]=(int)(Gyro_Omega*20);
 //			Out_Data[1]=(int)(Gyro_Integ*100);
 //			Out_Data[2]=(int)(Acc_Sigma*100);
 //			Out_Data[3]=(int)(Angle*100);
-//		
 //			Out_Put_Data();
 			
 			speed_cnt+=CarSpeed*100;
@@ -206,45 +191,12 @@ int main()
 		{
 			TIME1flag_100ms=0;
 			
-//			uint8_t imagechoose=2;
-//			uint8_t temp[128]={0};
-//			switch(imagechoose)
-//			{
-//				//二值化图像
-//				case 0:
-//				{
-//					for(uint8_t i=0; i<128; i++)
-//					{
-//						temp[i]=Binary_Image[i]*250;
-//					}
-//					break;
-//				}
-//				//原始图像
-//				case 1:
-//				{
-//					for(uint8_t i=0; i<128; i++)
-//					{
-//						temp[i]=ImageData[i];
-//					}
-//					break;
-//				}
-//				case 2:
-//				{
-//					for(uint8_t i=0; i<128; i++)
-//					{
-//						temp[i]=ImageData_2[i];
-//					}
-//					break;
-//				}
-//				default:
-//					break;
-//			}
-//			SendImageData(temp);
 			for(uint8_t i=0; i<128; i++)
 			{
 				Binary_Image[i]=Binary_Image[i]*250;
 				Binary_Image_2[i]=Binary_Image_2[i]*250;
 			}
+			//调试时可发送线性CCD图像数据到上位机观察
       //SendData();
 		}
 		if(TIME1flag_1000ms==1)
@@ -270,18 +222,10 @@ int main()
 
 static void PIT0_CallBack()
 {
-//	extern uint32_t IntegTime;
-//	extern void CCD_Start();
-//	uint8_t integ_pos=0;
+
 	static uint8_t pit0_cnt=0;
 	
 	pit0_cnt++;
-//	integ_pos=100-IntegTime;
-//	if(integ_pos>=2 && pit0_cnt==integ_pos)
-//	{
-////		CCD_Start();
-//	}
-
 	if(pit0_cnt>=100)
 	{
 		pit0_cnt=0;
@@ -316,7 +260,6 @@ static void PIT1_CallBack()
 	{
 		TIME1flag_1000ms=1;
 	}
-	
 	if(pit1_cnt>=200)
 	{
 		pit1_cnt=0;
