@@ -1,0 +1,17 @@
+.\objects\remote.o: ..\app\remote.c
+.\objects\remote.o: ..\app\remote.h
+.\objects\remote.o: D:\Keil_v5\ARM\ARMCC\bin\..\include\math.h
+.\objects\remote.o: ..\drivers\inc\common.h
+.\objects\remote.o: D:\Keil_v5\ARM\ARMCC\bin\..\include\stdint.h
+.\objects\remote.o: D:\Keil_v5\ARM\ARMCC\bin\..\include\stdbool.h
+.\objects\remote.o: D:\Keil_v5\ARM\ARMCC\bin\..\include\stddef.h
+.\objects\remote.o: D:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.6.0\Device\Include\MKL26Z4.h
+.\objects\remote.o: D:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cm0plus.h
+.\objects\remote.o: D:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmInstr.h
+.\objects\remote.o: D:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmFunc.h
+.\objects\remote.o: D:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.6.0\Device\Include\system_MKL26Z4.h
+.\objects\remote.o: ..\devices\motor.h
+.\objects\remote.o: ..\app\debug.h
+.\objects\remote.o: ..\devices\led.h
+.\objects\remote.o: ..\app\umc.h
+.\objects\remote.o: ..\app\ctrl.h

@@ -1,0 +1,17 @@
+.\objects\usmart_config.o: ..\usmart\usmart_config.c
+.\objects\usmart_config.o: ..\usmart\usmart.h
+.\objects\usmart_config.o: ..\usmart\usmart_str.h
+.\objects\usmart_config.o: ..\drivers\inc\common.h
+.\objects\usmart_config.o: D:\Keil_v5\ARM\ARMCC\bin\..\include\stdint.h
+.\objects\usmart_config.o: D:\Keil_v5\ARM\ARMCC\bin\..\include\stdbool.h
+.\objects\usmart_config.o: D:\Keil_v5\ARM\ARMCC\bin\..\include\stddef.h
+.\objects\usmart_config.o: D:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.6.0\Device\Include\MKL26Z4.h
+.\objects\usmart_config.o: D:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cm0plus.h
+.\objects\usmart_config.o: D:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmInstr.h
+.\objects\usmart_config.o: D:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmFunc.h
+.\objects\usmart_config.o: D:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.6.0\Device\Include\system_MKL26Z4.h
+.\objects\usmart_config.o: ..\drivers\inc\uart.h
+.\objects\usmart_config.o: ..\devices\OLED.h
+.\objects\usmart_config.o: ..\drivers\inc\gpio.h
+.\objects\usmart_config.o: ..\app\ctrl.h
+.\objects\usmart_config.o: ..\devices\motor.h

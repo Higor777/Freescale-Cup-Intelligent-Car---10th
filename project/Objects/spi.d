@@ -1,0 +1,12 @@
+.\objects\spi.o: ..\drivers\src\spi.c
+.\objects\spi.o: ..\drivers\inc\spi.h
+.\objects\spi.o: D:\Keil_v5\ARM\ARMCC\bin\..\include\stdint.h
+.\objects\spi.o: D:\Keil_v5\ARM\ARMCC\bin\..\include\stdbool.h
+.\objects\spi.o: ..\drivers\inc\gpio.h
+.\objects\spi.o: ..\drivers\inc\common.h
+.\objects\spi.o: D:\Keil_v5\ARM\ARMCC\bin\..\include\stddef.h
+.\objects\spi.o: D:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.6.0\Device\Include\MKL26Z4.h
+.\objects\spi.o: D:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cm0plus.h
+.\objects\spi.o: D:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmInstr.h
+.\objects\spi.o: D:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include\core_cmFunc.h
+.\objects\spi.o: D:\Keil_v5\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.6.0\Device\Include\system_MKL26Z4.h
